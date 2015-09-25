@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="vendor/bootstrap.min.css" />
-    <!--<link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.common-bootstrap.min.css" />
     <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.bootstrap.min.css" />
     <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.dataviz.min.css" />
-    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.dataviz.bootstrap.min.css" />-->
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.dataviz.bootstrap.min.css" /
 
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
@@ -24,12 +24,132 @@
     <![endif]-->
   </head>
   <body>
+
+<!-- navigation -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Home</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
     <section class="container">
       <header class="row page-header">
-        <h2 class="col-md-8">Today's Opportunities</h2>
-        <h4 class="col-md-4">Today is <span>September 23, 2015</span></h4>
+        <h2 class="col-md-9">Today's Opportunities</h2>
+        <h4 class="col-md-3">Today is <span>September 23, 2015</span></h4>
       </header>
     </section>
+    <main class="container">
+      <article class="row">
+
+        <section class="col-md-6 table-responsive">
+          <h4>new leads</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th class="col-xs-3">name</th>
+                <th class="col-xs-3">phone</th>
+                <th class="col-xs-2">vendor</th>
+                <th class="col-xs-4">loan purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">Sarah McLachian</a></td>
+                <td>915-541-9854</td>
+                <td>vox</td>
+                <td>purchase</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="col-md-6 table-responsive">
+          <h4>today's appointments</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th class="col-xs-3">date</th>
+                <th class="col-xs-3">time</th>
+                <th class="col-xs-2">event</th>
+                <th class="col-xs-4">assoc. contact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10/15/2015</td>
+                <td>2:30-4:30 PM</td>
+                <td>Call Contact</td>
+                <td><a href="#">Alex Lifeson</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="col-md-6 table-responsive">
+          <h4>today's tasks</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th class="col-xs-3">task name</th>
+                <th class="col-xs-3">status</th>
+                <th class="col-xs-2">due date</th>
+                <th class="col-xs-4">assoc. contact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>check credit</td>
+                <td>in process</td>
+                <td>10/15/2015</td>
+                <td><a href="#">Alex Lifeson</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="col-md-6 table-responsive">
+          <h4>birthdays & anniversaries</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th class="col-xs-3">name</th>
+                <th class="col-xs-3">event</th>
+                <th class="col-xs-2">date</th>
+                <th class="col-xs-4">phone</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">Eddie VanHalen</a></td>
+                <td>closing</td>
+                <td>10/15/14</td>
+                <td>741-654-3698</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+      </article>
+
+
+
+    </main>
+
 
 
 
