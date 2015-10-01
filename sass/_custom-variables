@@ -1,5 +1,0 @@
-// variables that are not a part of Bootstrap and never were.
-
-$brand-secondary:       darken(#576F86, 6.5%);
-$brand-light:           darken(#E7EDF4, 6.5%);
-$brand-neutral:         darken(#A3ADB0, 6.5%);
