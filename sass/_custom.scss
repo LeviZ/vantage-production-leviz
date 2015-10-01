@@ -7,8 +7,31 @@
   transform: translateY(50%);
 }
 
-// table head
-thead {
-  background-color: #fff;
+// page headers
+.page-header {
+  color: $body-text;
+  text-transform: capitalize;
 }
 
+// tables
+.table-striped {
+  color: $body-text;
+}
+.table-striped > thead {
+  background-color: $table-bg-thead;
+  text-transform: uppercase;
+}
+
+.table > tbody > tr > td, .table > thead > tr > th {
+  border: none;
+}
+
+.table__title {
+  margin: 0;
+  padding: 10px 8px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: $brand-neutral;
+  color: $table-title;
+  text-transform: uppercase;
+}

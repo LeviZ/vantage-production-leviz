@@ -1,9 +1,0 @@
-// Any existing bootstrap elements that are alterted via overides go here
-
-
-.table > thead > tr:first-child {
-  & > th, & > td {
-    &:first-child { border-top-left-radius: 4px; }
-    &:last-child { border-top-right-radius: 4px; }
-  }
-}
