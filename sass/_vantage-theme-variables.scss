@@ -7,14 +7,14 @@ $brand-primary:            #8B191C;
 //== Tables
 
 // //** Default background color used for all tables.
-$table-bg:                      lighten($brand-3rd, 90%);
+$table-bg:                      lighten($brand-3rd, 5%);
 //** Background color used for `.table-striped`.
 $table-bg-accent:               $brand-3rd;
 
 //== Scaffolding
 
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            #566e86 !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -22,3 +22,18 @@ $link-color:            $brand-primary !default;
 $link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
+
+//== Navbar
+
+$navbar-default-bg:              $brand-3rd;
+$navbar-default-border:          $brand-3rd;
+$navbar-default-color:           $text-color;
+$navbar-default-link-color:                $text-color;
+$navbar-default-link-active-color:         #fff;
+$navbar-default-link-active-bg:            $brand-primary;
+
+//== Dropdowns
+//
+
+$dropdown-bg:                    $brand-3rd;
+$dropdown-border:                darken($dropdown-bg, 25%);

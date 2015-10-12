@@ -1,4 +1,8 @@
-@import "base-theme-variables";
+$fa-font-path: "../bower_components/font-awesome/fonts" !default;
+@import "../bower_components/font-awesome/scss/font-awesome";
+@import "vantage-added-variables";
+@import "vantage-theme-variables";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "added-variables";
 @import "custom";
+
+

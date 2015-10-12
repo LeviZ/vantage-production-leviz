@@ -1,0 +1,23 @@
+{
+  "name": "vantage-production-leviz",
+  "version": "0.0.0",
+  "homepage": "https://github.com/LeviZ/vantage-production-leviz",
+  "authors": [
+    "Levi Zortman <levizortman@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}
