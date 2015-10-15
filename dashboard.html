@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Contacts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.common-bootstrap.min.css" />
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.bootstrap.min.css" />
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.dataviz.min.css" />
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.dataviz.bootstrap.min.css" />
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script src="http://cdn.kendostatic.com/2015.1.408/js/kendo.all.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2015.1.408/js/kendo.timezones.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+
+    <!-- [if lt IE 9]>
+    <script src="vendor/html5shiv.js"></script>
+    <script src="vendor/respond.min.js"></script>
+    <![endif] -->
+  </head>
+  <body>
+
+<!-- profile header -->
+    <header class="row header">
+      <a href="#"><img src="assets/imgs/header-logo.jpg" width="140" height="80"></a>
+      <nav class="header-menu">
+        <ul class="header-menu-list">
+          <li class="header-menu-item dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome. John Doe (177)<span class="caret"></span></a>
+            <ul class="dropdown-menu header-dropdown">
+              <li><a href="#">My Profile</a></li>
+              <li role="separator" class="header-menu-sep"></li>
+              <li><a href="#">Notifications(177)</a></li>
+              <li role="separator" class="header-menu-sep"></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+          </li>
+          <li class="header-menu-item"><a href="#">Resources</a></li>
+          <li class="header-menu-item"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+  <!-- navigation -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid main-nav">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Home</a>
+        </div>
+
+        <!--  -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-nav-custom">
+            <li class="active"><a href="#">CRM <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">MMG</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Marketing</a>
+              <div class="triangle-container">
+                  <div class="triangle-down"></div>
+              </div>
+              <div class="dropdown-menu multi-column columns-3 container">
+                <ul class="container">
+                  <li class="col-xs-4">
+                    <ul class="multi-column-dropdown">
+                      <li class="multi-column-dropdown-header">Content Library</li>
+                      <li><a href="#">Browse Content</a></li>
+                      <li><a href="#">Browse Invitation</a></li>
+                      <li><a href="#">Search Content</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-xs-4">
+                    <ul class="multi-column-dropdown">
+                      <li class="multi-column-dropdown-header">Content Design</li>
+                      <li><a href="#">Blank Templates</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-xs-4">
+                    <ul class="multi-column-dropdown">
+                      <li class="multi-column-dropdown-header">Campaigns Development</li>
+                      <li><a href="#">List</a></li>
+                      <li><a href="#">Search Contact</a></li>
+                      <li><a href="#">Manage Custom Campaigns</a></li>
+                      <li><a href="#">Manage Single Campaigns</a></li>
+                      <li><a href="#">Manage Campaigns Packages</a></li>
+                      <li><a href="#">Approve Campaigns</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Toolbox</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Administration</a></li>
+          </ul> <!-- end navbar -->
+
+          <ul class="nav-list-none navbar-nav navbar-right">
+            <li>
+              <a class="navbar-brand" href="#">
+                <img alt="Help icon" src="images/settings.png">
+              </a>
+            </li>
+          </ul>
+
+        </div> <!-- end navbar collapse  -->
+      </div> <!-- end container fluid -->
+          <!-- <div class="menu-decore-line"></div> -->
+    </nav>
+
+    <section class="container">
+      <header class="row page-header text-capitalize">
+        <section class="col-md-7">
+          <h2>today's opportunities</h2>
+        </section>
+        <section class="col-md-5 text-right vert-center hidden-xs hidden-sm">
+          <h4><time>september 23, 2015</time></h4>
+        </section>
+
+      </header>
+    </section>
+    <main class="container">
+      <article class="row">
+
+        <section class="col-sm-6 table-responsive">
+          <h4 class="table__title text-uppercase">new leads</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th class="col-xs-3">name</th>
+                <th class="col-xs-3">phone</th>
+                <th class="col-xs-2">vendor</th>
+                <th class="col-xs-4">loan purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">Sarah McLachian</a></td>
+                <td>915-541-9854</td>
+                <td>vox</td>
+                <td>purchase</td>
+              </tr>
+              <tr>
+                <td><a href="#">Sarah McLachian</a></td>
+                <td>915-541-9854</td>
+                <td>vox</td>
+                <td>purchase</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="col-sm-6 table-responsive">
+          <h4 class="table__title text-uppercase">today's appointments</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th class="col-xs-3">date</th>
+                <th class="col-xs-3">time</th>
+                <th class="col-xs-2">event</th>
+                <th class="col-xs-4">assoc. contact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10/15/2015</td>
+                <td>2:30-4:30 PM</td>
+                <td>Call Contact</td>
+                <td><a href="#">Alex Lifeson</a></td>
+              </tr>
+              <tr>
+                <td>10/15/2015</td>
+                <td>2:30-4:30 PM</td>
+                <td>Call Contact</td>
+                <td><a href="#">Alex Lifeson</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="col-sm-6 table-responsive">
+          <h4 class="table__title text-uppercase">today's tasks</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th class="col-xs-3">task name</th>
+                <th class="col-xs-3">status</th>
+                <th class="col-xs-2">due date</th>
+                <th class="col-xs-4">assoc. contact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>check credit</td>
+                <td>in process</td>
+                <td>10/15/2015</td>
+                <td><a href="#">Alex Lifeson</a></td>
+              </tr>
+              <tr>
+                <td>check credit</td>
+                <td>in process</td>
+                <td>10/15/2015</td>
+                <td><a href="#">Alex Lifeson</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="col-sm-6 table-responsive">
+          <h4 class="table__title text-uppercase">birthdays & anniversaries</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th class="col-xs-3">name</th>
+                <th class="col-xs-3">event</th>
+                <th class="col-xs-2">date</th>
+                <th class="col-xs-4">phone</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">Eddie VanHalen</a></td>
+                <td>closing</td>
+                <td>10/15/14</td>
+                <td>741-654-3698</td>
+              </tr>
+              <tr>
+                <td><a href="#">Eddie VanHalen</a></td>
+                <td>closing</td>
+                <td>10/15/14</td>
+                <td>741-654-3698</td>
+              </tr>
+              <tr>
+                <td><a href="#">Eddie VanHalen</a></td>
+                <td>closing</td>
+                <td>10/15/14</td>
+                <td>741-654-3698</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+      </article>
+
+
+
+    </main>
+
+
+
+
+
+
+
+  </body>
+</html>

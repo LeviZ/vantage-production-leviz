@@ -203,6 +203,73 @@
 
 
 
+/*KendoUI Grid reset*/
+.k-grid,
+.k-grid * {
+    border: 0;
+    border-color: #fff;
+}
+
+div.k-grid-content {
+    overflow-y: hidden;
+    height: auto;
+}
+
+.k-grid-header {
+    padding: 0;
+}
+
+.k-grid-header .k-header {
+    background: #DFDFDF;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.k-grid-header .th.k-header a {
+    color: #DFDFDF ;
+    display: none;
+}
+
+.k-grid-header .k-header .k-icon.k-filter:before {
+    content: "\f000";
+}
+
+.k-grid-header .k-header .k-icon.k-i-arrow-n,
+.k-grid-header .k-header .k-icon.k-i-arrow-s {
+    float: right;
+}
+
+.k-grid-pager {
+    background: #fff;
+    border: 0;
+}
+
+.k-grid-content tr td {
+    font-size: 12px ;
+    background: #fff;
+    text-align: left ;
+    color: #8C8C8C;
+}
+
+.k-grid-content tr td a.link {
+    font-weight: bold;
+    color: #6F6CC5;
+}
+
+.k-grid-content tr td a .fa {
+    color: #4E4E4E;
+}
+
+.k-grid-content tr.k-alt td {
+    background: #F0F0F0;
+}
+
+        /* End of Kendo Grid tweaking */
+
+
+
 
 
 
