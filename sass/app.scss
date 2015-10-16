@@ -1,8 +1,11 @@
-$fa-font-path: "../bower_components/font-awesome/fonts" !default;
+$fa-font-path: "../bower_components/font-awesome/fonts";
+
 @import "../bower_components/font-awesome/scss/font-awesome";
+
 @import "vantage-added-variables";
 @import "vantage-theme-variables";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "typography";
 @import "custom";
 
 

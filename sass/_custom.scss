@@ -67,11 +67,16 @@
     top: 0;
 }
 
-.header-dropdown{
+.header-dropdown {
     background: $brand-3rd;
     margin-top: -10px;
     margin-left: 10px;
 }
+
+.header-dropdown > li > a {
+    padding: 5px 10px;
+}
+
 
 .header-dropdown li a:hover {
     color: darken($brand-secondary, 15%);
@@ -115,10 +120,10 @@
   list-style: none;
 }
 
-// .dropdown-menu li a {
-//     padding: 5px;
-//     font-weight: 300;
-// }
+.dropdown-menu li a {
+    padding: 5px;
+    font-weight: 300;
+}
 
 .multi-column-dropdown {
     list-style: none;
@@ -146,7 +151,11 @@
     line-height: 1.42857;
     color: #777;
     white-space: nowrap;
-    // padding: 5px;
+    padding: 5px;
+}
+
+.columns-3 > .container > .col-xs-4 {
+    width: auto;
 }
 
 .navbar-default .navbar-nav-custom > .active > a,
@@ -155,8 +164,8 @@
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
 .nav-list-none {
@@ -193,15 +202,9 @@
     margin: 0 auto;
 }
 
-@media (max-width: 767px) {
-    .dropdown-menu .multi-column {
-        min-width: 240px;
-        overflow-x: hidden;
-        display: block;
-    }
+.columns-3 {
+    max-width: 600px;
 }
-
-
 
 /*KendoUI Grid reset*/
 .k-grid,
@@ -220,16 +223,22 @@ div.k-grid-content {
 }
 
 .k-grid-header .k-header {
-    background: #DFDFDF;
+    background: $brand-4th;
     font-weight: bold;
-    font-size: 12px;
-    padding: 10px;
     text-transform: uppercase;
 }
 
 .k-grid-header .th.k-header a {
-    color: #DFDFDF ;
     display: none;
+}
+
+.k-grid-header .k-link:link, .k-grid-header .k-link:visited, .k-grid-header .k-nav-current.k-state-hover .k-link, .k-grouping-header .k-link {
+    color: $table-text-thead;
+    font-size: 15px;
+}
+
+.k-grid-header th.k-header>.k-link {
+    padding: .8em .6em;
 }
 
 .k-grid-header .k-header .k-icon.k-filter:before {
@@ -242,31 +251,35 @@ div.k-grid-content {
 }
 
 .k-grid-pager {
-    background: #fff;
+    // background: #fff;
     border: 0;
 }
 
 .k-grid-content tr td {
-    font-size: 12px ;
-    background: #fff;
-    text-align: left ;
-    color: #8C8C8C;
+    font-size: 14px;
+    text-align: left;
+    // color: #8C8C8C;
+    border-color: #fff;
+}
+
+.k-alt {
+    background: $table-bg-accent;
+}
+
+.k-grid-content tr td [data-icon]::before {
+    color: $brand-secondary;
+    &:hover, &:focus {
+        color: darken($brand-secondary, 15%);
+    }
 }
 
 .k-grid-content tr td a.link {
     font-weight: bold;
-    color: #6F6CC5;
-}
-
-.k-grid-content tr td a .fa {
-    color: #4E4E4E;
-}
-
-.k-grid-content tr.k-alt td {
-    background: #F0F0F0;
+    // color: #6F6CC5;
 }
 
         /* End of Kendo Grid tweaking */
+
 
 
 

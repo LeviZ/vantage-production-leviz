@@ -1,0 +1,88 @@
+// Fonts and Icons
+
+// Icomoon
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('../bower_components/icomoon/icomoon.eot?2emed1');
+  src:url('../bower_components/icomoon/icomoon.eot?2emed1#iefix') format('embedded-opentype'),
+    url('../bower_components/icomoon/icomoon.ttf?2emed1') format('truetype'),
+    url('../bower_components/icomoon/icomoon.woff?2emed1') format('woff'),
+    url('../bower_components/icomoon/icomoon.svg?2emed1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-info:before {
+  content: "\e80c";
+}
+.icon-apt:before {
+  content: "\e800";
+}
+.icon-collapse:before {
+  content: "\e801";
+}
+.icon-credit:before {
+  content: "\e802";
+}
+.icon-email:before {
+  content: "\e803";
+}
+.icon-expand:before {
+  content: "\e804";
+}
+.icon-history:before {
+  content: "\e805";
+}
+.icon-LOS:before {
+  content: "\e806";
+}
+.icon-notes:before {
+  content: "\e807";
+}
+.icon-print:before {
+  content: "\e808";
+}
+.icon-sales:before {
+  content: "\e809";
+}
+.icon-task:before {
+  content: "\e80a";
+}
+.icon-pencil:before {
+  content: "\e80e";
+}
+.icon-copy:before {
+  content: "\e80f";
+}
+.icon-users:before {
+  content: "\e810";
+}
+.icon-cross:before {
+  content: "\e80b";
+}
+
+[data-icon]::before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  margin-right: 3px;
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
