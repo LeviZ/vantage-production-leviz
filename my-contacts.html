@@ -16,10 +16,10 @@
 
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-    <!-- [if lt IE 9]>
+    [if lt IE 9]>
     <script src="vendor/html5shiv.js"></script>
     <script src="vendor/respond.min.js"></script>
-    <![endif] -->
+    <![endif]
 </head>
 <body>
     <!-- profile header -->
@@ -159,10 +159,9 @@
                                 <span class="input-group-addon" id="sizing-addon1">@</span>
                             </div>
                         </div>
-                        <div class="  form-inline col-xs-5">
+                        <div class="form-inline col-xs-5">
                             <div class=" ">
                                 <input id="showHideColumns" style="width: 100%" data-role="multiselectbox" data-option-label="-" data-text-field="Name" data-value-field="Id" data-bind="source: testItemSource, value: testItems" />
-
                             </div>
                         </div>
                     </div>
@@ -704,7 +703,7 @@
 
             $('#ddlSearchOption').kendoDropDownList();
             $('#ddlItemPageSize').kendoDropDownList();
-            
+
             $("#showHideColumns").kendoDropDownList({
 
                 optionLabel: "Show/Hide Columns",
@@ -716,7 +715,7 @@
             });
         });
     </script>
-     
+
 
 </body>
 </html>
