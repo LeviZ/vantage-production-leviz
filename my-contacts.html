@@ -1,125 +1,114 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>My Contacts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
     <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
 
     <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.common-bootstrap.min.css" />
     <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.bootstrap.min.css" />
     <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.dataviz.min.css" />
     <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.dataviz.bootstrap.min.css" />
-
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
     <script src="http://cdn.kendostatic.com/2015.1.408/js/kendo.all.min.js"></script>
     <script src="http://cdn.kendostatic.com/2015.1.408/js/kendo.timezones.min.js"></script>
 
-
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-
     <!-- [if lt IE 9]>
     <script src="vendor/html5shiv.js"></script>
     <script src="vendor/respond.min.js"></script>
     <![endif] -->
-  </head>
-  <body>
-
-<!-- profile header -->
+</head>
+<body>
+    <!-- profile header -->
     <header class="row header">
-      <a href="#"><img src="assets/imgs/header-logo.jpg" width="140" height="80"></a>
-      <nav class="header-menu">
-        <ul class="header-menu-list">
-          <li class="header-menu-item dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome. John Doe (177)<span class="caret"></span></a>
-            <ul class="dropdown-menu header-dropdown">
-              <li><a href="#">My Profile</a></li>
-              <li role="separator" class="header-menu-sep"></li>
-              <li><a href="#">Notifications(177)</a></li>
-              <li role="separator" class="header-menu-sep"></li>
-              <li><a href="#">Log Out</a></li>
+        <a href="#"><img src="assets/imgs/header-logo.jpg" width="140" height="80"></a>
+        <nav class="header-menu">
+            <ul class="header-menu-list">
+                <li class="header-menu-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome. John Doe (177)<span class="caret"></span></a>
+                    <ul class="dropdown-menu header-dropdown">
+                        <li><a href="#">My Profile</a></li>
+                        <li role="separator" class="header-menu-sep"></li>
+                        <li><a href="#">Notifications(177)</a></li>
+                        <li role="separator" class="header-menu-sep"></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                </li>
+                <li class="header-menu-item"><a href="#">Resources</a></li>
+                <li class="header-menu-item"><a href="#">Contact Us</a></li>
             </ul>
-          </li>
-          <li class="header-menu-item"><a href="#">Resources</a></li>
-          <li class="header-menu-item"><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
+        </nav>
     </header>
-  <!-- navigation -->
+    <!-- navigation -->
     <nav class="navbar navbar-default">
-      <div class="container-fluid main-nav">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Home</a>
-        </div>
-
-        <!--  -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-nav-custom">
-            <li class="active"><a href="#">CRM <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Sales</a></li>
-            <li><a href="#">MMG</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Marketing</a>
-              <div class="triangle-container">
-                  <div class="triangle-down"></div>
-              </div>
-              <div class="dropdown-menu multi-column columns-3 container">
-                <ul class="container">
-                  <li class="col-xs-4">
-                    <ul class="multi-column-dropdown">
-                      <li class="multi-column-dropdown-header">Content Library</li>
-                      <li><a href="#">Browse Content</a></li>
-                      <li><a href="#">Browse Invitation</a></li>
-                      <li><a href="#">Search Content</a></li>
-                    </ul>
-                  </li>
-                  <li class="col-xs-4">
-                    <ul class="multi-column-dropdown">
-                      <li class="multi-column-dropdown-header">Content Design</li>
-                      <li><a href="#">Blank Templates</a></li>
-                    </ul>
-                  </li>
-                  <li class="col-xs-4">
-                    <ul class="multi-column-dropdown">
-                      <li class="multi-column-dropdown-header">Campaigns Development</li>
-                      <li><a href="#">List</a></li>
-                      <li><a href="#">Search Contact</a></li>
-                      <li><a href="#">Manage Custom Campaigns</a></li>
-                      <li><a href="#">Manage Single Campaigns</a></li>
-                      <li><a href="#">Manage Campaigns Packages</a></li>
-                      <li><a href="#">Approve Campaigns</a></li>
-                    </ul>
-                  </li>
+        <div class="container-fluid main-nav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Home</a>
+            </div>
+            <!--  -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-nav-custom">
+                    <li class="active"><a href="#">CRM <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">MMG</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Marketing</a>
+                        <div class="triangle-container">
+                            <div class="triangle-down"></div>
+                        </div>
+                        <div class="dropdown-menu multi-column columns-3 container">
+                            <ul class="container">
+                                <li class="col-xs-4">
+                                    <ul class="multi-column-dropdown">
+                                        <li class="multi-column-dropdown-header">Content Library</li>
+                                        <li><a href="#">Browse Content</a></li>
+                                        <li><a href="#">Browse Invitation</a></li>
+                                        <li><a href="#">Search Content</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-xs-4">
+                                    <ul class="multi-column-dropdown">
+                                        <li class="multi-column-dropdown-header">Content Design</li>
+                                        <li><a href="#">Blank Templates</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-xs-4">
+                                    <ul class="multi-column-dropdown">
+                                        <li class="multi-column-dropdown-header">Campaigns Development</li>
+                                        <li><a href="#">List</a></li>
+                                        <li><a href="#">Search Contact</a></li>
+                                        <li><a href="#">Manage Custom Campaigns</a></li>
+                                        <li><a href="#">Manage Single Campaigns</a></li>
+                                        <li><a href="#">Manage Campaigns Packages</a></li>
+                                        <li><a href="#">Approve Campaigns</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Toolbox</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Administration</a></li>
+                </ul> <!-- end navbar -->
+                <ul class="nav-list-none navbar-nav navbar-right">
+                    <li>
+                        <a class="navbar-brand" href="#" data-icon="&#xe80d;"></a>
+                    </li>
                 </ul>
-              </div>
-            </li>
-            <li><a href="#">Toolbox</a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Administration</a></li>
-          </ul> <!-- end navbar -->
-
-          <ul class="nav-list-none navbar-nav navbar-right">
-            <li>
-              <a class="navbar-brand" href="#" data-icon="&#xe80d;"></a>
-            </li>
-          </ul>
-
-        </div> <!-- end navbar collapse  -->
-      </div> <!-- end container fluid -->
-          <!-- <div class="menu-decore-line"></div> -->
+            </div> <!-- end navbar collapse  -->
+        </div> <!-- end container fluid -->
+        <!-- <div class="menu-decore-line"></div> -->
     </nav>
-
     <main class="container">
-
         <h1>Contacts</h1>
         <!-- Nav tabs -->
         <ul class="nav nav-tabs custom-tab" role="tablist">
@@ -130,11 +119,9 @@
             <li role="presentation"><a href="#Partners" aria-controls="Partners" role="tab" data-toggle="tab">Partners</a></li>
             <li role="presentation"><a href="#Recruits" aria-controls="Recruits" role="tab" data-toggle="tab">Recruits</a></li>
         </ul>
-
         <!-- Tab panes -->
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="Leads">
-
                 <h3 class="page-header">
                     Lead Contact   <a class="refresh">
                         <img src="assets/imgs/refresh.png" />
@@ -144,19 +131,16 @@
                     <div class="col-md-6">
                         <div class="form-group form-inline col-xs-4">
                             <span class="text">Show</span>
-                            <select class="form-control ">
+                            <select class="form-control " id="ddlItemPageSize">
                                 <option>10</option>
                                 <option>20</option>
                                 <option>50</option>
                             </select>
-
                             <span class="text">Items</span>
-
                         </div>
                         <div class="form-group form-inline col-xs-8">
                             <div class="btn-group btn-group-view" role="group" aria-label="...">
                                 <button type="button" class="btn btn-default btn-view active">Grid View</button>
-
                                 <button type="button" class="btn btn-default btn-view">List View</button>
                             </div>
                         </div>
@@ -166,647 +150,545 @@
                             <div class="input-group quick-search">
                                 <div class="form-control ">
                                     <input type="text" aria-label="..." placeholder="Quick Search">
-
-                                    <select>
+                                    <select id="ddlSearchOption">
                                         <option>All</option>
                                         <option>Email</option>
                                         <option>First Name</option>
                                     </select>
-
                                 </div>
-
                                 <span class="input-group-addon" id="sizing-addon1">@</span>
                             </div>
                         </div>
                         <div class="  form-inline col-xs-5">
                             <div class=" ">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Show/Hide Columns
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="margin-left: 20px;">
-                                    <li>
-                                        <a>
-                                            <label>
-                                                <input type="checkbox">
-                                                Lead ID
-                                            </label>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <label>
-                                                <input type="checkbox">
-                                                Modified Date
-                                            </label>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <label>
-                                                <input type="checkbox">
-                                                Initil Assigned Date
-                                            </label>
-                                        </a>
-                                    </li>
-
-
-                                </ul>
-
-
+                                <input id="showHideColumns" style="width: 100%" data-role="multiselectbox" data-option-label="-" data-text-field="Name" data-value-field="Id" data-bind="source: testItemSource, value: testItems" />
 
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- CRM table (Kendo) -->
+                <div class="Leads">
+                    <table id="grid">
+                        <colgroup>
+                            <col style="width:130px" />
+                            <col />
+                            <col />
+                            <col />
+                            <col />
+                            <col />
+                            <col style="width:110px" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="th">a</th>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Email</th>
+                                <th>Referred By</th>
+                                <th>Create Date</th>
+                                <th>Lead Heat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Alex Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-danger btn-sm center-block">Hot</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Neil Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-warning btn-sm center-block">Warm</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Geddy Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-info btn-sm center-block">Cold</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Lindsay Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Alex Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Neil Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-warning btn-sm center-block">Warm</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Geddy Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-info btn-sm center-block">Cold</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Lindsay Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Alex Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Neil Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-warning btn-sm center-block">Warm</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Geddy Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-info btn-sm center-block">Cold</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Lindsay Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Alex Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Neil Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-warning btn-sm center-block">Warm</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Geddy Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-info btn-sm center-block">Cold</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Lindsay Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Alex Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Neil Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-warning btn-sm center-block">Warm</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Geddy Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-info btn-sm center-block">Cold</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Lindsay Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Alex Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Neil Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-warning btn-sm center-block">Warm</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Geddy Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-info btn-sm center-block">Cold</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Lindsay Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Alex Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Neil Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-warning btn-sm center-block">Warm</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Geddy Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-info btn-sm center-block">Cold</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="80">
+                                    <a href="#" data-icon="&#xe807;"></a>
+                                    <a href="#" data-icon="&#xe803;"></a>
+                                    <a href="#" data-icon="&#xe809;"></a>
+                                    <a href="#" data-icon="&#xe805;"></a>
+                                    <a href="#" data-icon="&#xe802;"></a>
+                                </td>
+                                <td><a href="#" class="link">Lindsay Lifeson</a></td>
+                                <td>555-555-5555</td>
+                                <td><a href="#" class="link">alex@rush.com</a></td>
+                                <td>Vender XYZ</td>
+                                <td>8/15/2015</td>
+                                <td>
+                                    <a class="btn btn-danger btn-sm center-block">Hot</a>
+                                </td>
+                            </tr>
 
-<!-- CRM table (Kendo) -->
-        <div class="Leads">
-            <table id="grid">
-                <colgroup>
-                    <col style="width:130px" />
-                    <col />
-                    <col />
-                    <col />
-                    <col />
-                    <col />
-                    <col style="width:110px"/>
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th class="th">a</th>
-                        <th>Name</th>
-                        <th>Phone</th>
-                        <th>Email</th>
-                        <th>Referred By</th>
-                        <th>Create Date</th>
-                        <th>Lead Heat</th>
+                        </tbody>
+                    </table>
 
-                    </tr>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Prospects">
 
-                </thead>
-                <tbody>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-                        </td>
-                        <td><a href="#" class="link">Alex Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-danger btn-sm center-block">Hot</a>
-                        </td>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="ProspectsInProcess">
 
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Clients">
 
-                        </td>
-                        <td><a href="#" class="link">Neil Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-warning btn-sm center-block">Warm</a>
-                        </td>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Partners">
 
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
+            </div><div role="tabpanel" class="tab-pane" id="Recruits">
 
-                        </td>
-                        <td><a href="#" class="link">Geddy Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-info btn-sm center-block">Cold</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Lindsay Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Alex Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Neil Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-warning btn-sm center-block">Warm</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Geddy Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-info btn-sm center-block">Cold</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Lindsay Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Alex Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Neil Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-warning btn-sm center-block">Warm</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Geddy Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-info btn-sm center-block">Cold</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Lindsay Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Alex Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Neil Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-warning btn-sm center-block">Warm</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Geddy Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-info btn-sm center-block">Cold</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Lindsay Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Alex Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Neil Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-warning btn-sm center-block">Warm</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Geddy Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-info btn-sm center-block">Cold</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Lindsay Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Alex Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Neil Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-warning btn-sm center-block">Warm</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Geddy Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-info btn-sm center-block">Cold</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Lindsay Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Alex Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-danger btn-sm center-block center-block">Hot</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Neil Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-warning btn-sm center-block">Warm</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Geddy Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-info btn-sm center-block">Cold</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td width="80">
-                            <a href="#" data-icon="&#xe807;"></a>
-                            <a href="#" data-icon="&#xe803;"></a>
-                            <a href="#" data-icon="&#xe809;"></a>
-                            <a href="#" data-icon="&#xe805;"></a>
-                            <a href="#" data-icon="&#xe802;"></a>
-
-                        </td>
-                        <td><a href="#" class="link">Lindsay Lifeson</a></td>
-                        <td>555-555-5555</td>
-                        <td><a href="#" class="link">alex@rush.com</a></td>
-                        <td>Vender XYZ</td>
-                        <td>8/15/2015</td>
-                        <td>
-                            <a class="btn btn-danger btn-sm center-block">Hot</a>
-                        </td>
-
-                    </tr>
-
-
-                </tbody>
-            </table>
-
-
+            </div>
         </div>
-      </div>
-          <div role="tabpanel" class="tab-pane" id="Prospects">
-
-
-          </div>
-          <div role="tabpanel" class="tab-pane" id="ProspectsInProcess">
-
-
-          </div>
-          <div role="tabpanel" class="tab-pane" id="Clients">
-
-
-          </div>
-          <div role="tabpanel" class="tab-pane" id="Partners">
-
-
-          </div><div role="tabpanel" class="tab-pane" id="Recruits">
-
-
-          </div>
-      </div>
     </main>
-
 
     <script>
         $(document).ready(function () {
@@ -819,14 +701,22 @@
                 },
                 sortable: true
             });
+
+            $('#ddlSearchOption').kendoDropDownList();
+            $('#ddlItemPageSize').kendoDropDownList();
+            
+            $("#showHideColumns").kendoDropDownList({
+
+                optionLabel: "Show/Hide Columns",
+                valueTemplate: '<span class="selected-value" style="background-image: url(\'../content/web/Customers/#:data.CustomerID#.jpg\')"></span><span>#:data#</span>',
+                template: '<span class="k-state-default" ><input type="checkbox"  /></span>' +
+                    '<span class="k-state-default"> #: data # </span>',
+                dataSource: ['adsad', 'asdsa', 'asds']
+
+            });
         });
     </script>
+     
 
-
-
-
-
-
-
-  </body>
+</body>
 </html>
