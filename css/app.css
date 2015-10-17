@@ -8146,7 +8146,8 @@ div.k-grid-content {
   height: auto; }
 
 .k-grid-header {
-  padding: 0; }
+  padding: 0px;
+  padding-right: 0px !important; }
 
 .k-grid-header .k-header {
   background: #a3adb0;
