@@ -5976,8 +5976,8 @@ tbody.collapse.in {
   .navbar-default .navbar-nav > li > a {
     color: #566e86; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-      color: #333333;
-      background-color: transparent; }
+      color: #384857;
+      background-color: #c4d3e4; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: white;
     background-color: #8b191c; }
@@ -6000,8 +6000,8 @@ tbody.collapse.in {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #566e86; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #333333;
-        background-color: transparent; }
+        color: #384857;
+        background-color: #c4d3e4; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
       color: white;
       background-color: #8b191c; }
@@ -6011,11 +6011,11 @@ tbody.collapse.in {
   .navbar-default .navbar-link {
     color: #566e86; }
     .navbar-default .navbar-link:hover {
-      color: #333333; }
+      color: #384857; }
   .navbar-default .btn-link {
     color: #566e86; }
     .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
-      color: #333333; }
+      color: #384857; }
     .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus {
       color: #cccccc; }
 
@@ -7926,7 +7926,7 @@ button.close {
   display: inline;
   float: left; }
 
-.header-menu-list .header-menu-item > a {
+.header-menu-list .header-menu-item > a, .header-menu-list .header-menu-item > span {
   display: block;
   padding: 10px;
   color: #566e86; }
@@ -7970,6 +7970,9 @@ button.close {
   overflow: hidden;
   background-color: #b2b2b2;
   width: 90%; }
+
+.header-menu-item .dropdown-toggle a {
+  color: #8b191c; }
 
 .main-nav {
   border-bottom: 3px solid #8b191c; }
@@ -8018,6 +8021,9 @@ button.close {
 .navbar-default .navbar-nav > .open > a:focus {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px; }
+
+.dropdown:hover > .dropdown-menu {
+  display: block; }
 
 .nav-list-none {
   list-style-type: none;

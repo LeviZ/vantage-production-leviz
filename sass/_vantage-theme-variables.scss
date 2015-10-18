@@ -35,6 +35,8 @@ $navbar-default-color:           $text-color;
 $navbar-default-link-color:                $text-color;
 $navbar-default-link-active-color:         #fff;
 $navbar-default-link-active-bg:            $brand-primary;
+$navbar-default-link-hover-bg:             darken($brand-3rd, 10%);
+$navbar-default-link-hover-color:          darken($text-color, 15%);
 
 //== Dropdowns
 //
