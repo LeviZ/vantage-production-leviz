@@ -101,8 +101,36 @@
                     </li>
                     <li><a href="#">Toolbox</a></li>
                     <li><a href="#">Reports</a></li>
-                    <li><a href="#">Administration</a></li>
+                    <li class="dropdown administrator">
+                        <a    class="dropdown-toggle" data-toggle="dropdown">Administration</a>
+                        <div class="triangle-container">
+                            <div class="triangle-down"></div>
+                        </div>
+                        <div class="dropdown-menu " id="administratorMenu" style="width: 100% !important;">
+                            <ul>
+                                <li>
+                                    <a class="dropdown-toggle" data-toggle="dropdown">Configuration</a>
+                                    <ul class="dropdown-menu ">
+                                        <li>
+                                            <a>Manage Roles</a>
+
+                                        </li>
+                                        <li>
+                                            <a>Compliance</a>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Compliance</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </li>
                 </ul> <!-- end navbar -->
+                
                 <ul class="nav-list-none navbar-nav navbar-right">
                     <li>
                         <a class="navbar-brand" href="#" data-icon="&#xe80d;"></a>
@@ -132,8 +160,8 @@
                     </a>
                 </h3>
                 <div class="row crm-controls">
-                    <div class="col-md-6">
-                        <div class="form-group form-inline col-xs-4">
+                    <div class="col-md-6    col-sm-6  col-xs-12">
+                        <div class="form-group form-inline col-xs-6">
                             <span class="text">Show</span>
                             <select class="form-control " id="ddlItemPageSize">
                                 <option>10</option>
@@ -142,14 +170,14 @@
                             </select>
                             <span class="text">Items</span>
                         </div>
-                        <div class="form-group form-inline col-xs-8">
+                        <div class="form-group form-inline col-xs-6">
                             <div class="btn-group btn-group-view" role="group" aria-label="...">
                                 <button type="button" class="btn btn-default btn-view active">Grid View</button>
                                 <button type="button" class="btn btn-default btn-view">List View</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6     col-sm-6  col-xs-12">
                         <div class="form-group form-inline col-xs-7">
                             <div class="input-group quick-search">
                                 <div class="form-control ">
@@ -717,9 +745,32 @@
                 dataSource: ['Lead', 'First Name', 'Last Name']
 
             });
+
+
+            $('.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
+                // Avoid following the href location when clicking
+                event.preventDefault();
+                // Avoid having the menu to close when clicking
+                event.stopPropagation();
+                // If a menu is already open we close it
+                $('ul.dropdown-menu [data-toggle=dropdown]').parent().removeClass('open');
+                // opening the one you clicked on
+                $(this).parent().addClass('open');
+
+                var menu = $(this).parent().find("ul");
+                var menupos = $(menu).offset();
+
+                if (menupos.left + menu.width() > $(window).width()) {
+                    var newpos = -$(menu).width();
+                    menu.css({ left: newpos });
+                } else {
+                    var newpos = $(this).parent().width();
+                    menu.css({ left: newpos });
+                }
+
+            });
         });
     </script>
-
 
 </body>
 </html>
