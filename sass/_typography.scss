@@ -27,9 +27,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-help:before {
-  content: "\e80d";
-}
+
 .icon-info:before {
   content: "\e80c";
 }
@@ -82,7 +80,7 @@
 [data-icon]::before {
   font-family: 'icomoon';
   content: attr(data-icon);
-  margin-right: 6px;
+  margin-right: 5%;
   speak: none;
   font-weight: normal;
   font-variant: normal;

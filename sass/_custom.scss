@@ -337,7 +337,7 @@ margin-bottom: -4px;
 
 
 
-// CRM Table (Kendo)
+// CRM Table (Kendo) list view
 
 
 .k-grid,
@@ -392,6 +392,7 @@ div.k-grid-content {
     font-size: 13px;
     text-align: left;
     border-color: #fff;
+    white-space: nowrap;
 }
 
 .k-alt {
@@ -432,6 +433,8 @@ div.k-grid-content {
     padding-top: 1em;
     background: #fff;
 }
+
+// CRM Table (Kendo) grid view
 
 
 
