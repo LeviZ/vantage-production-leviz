@@ -28,53 +28,74 @@
 }
 
 
-.icon-info:before {
-  content: "\e80c";
-}
-.icon-apt:before {
+.icon-icon_arrowUp:before {
   content: "\e800";
 }
-.icon-collapse:before {
+.icon-icon_arrrowDwn:before {
   content: "\e801";
 }
-.icon-credit:before {
+.icon-icon_refresh:before {
   content: "\e802";
 }
-.icon-email:before {
+.icon-Icon_list:before {
   content: "\e803";
 }
-.icon-expand:before {
+.icon-icon_grid:before {
   content: "\e804";
 }
-.icon-history:before {
+.icon-apt:before {
   content: "\e805";
 }
-.icon-LOS:before {
+.icon-collapse:before {
   content: "\e806";
 }
-.icon-notes:before {
+.icon-credit:before {
   content: "\e807";
 }
-.icon-print:before {
+.icon-email:before {
   content: "\e808";
 }
-.icon-sales:before {
+.icon-expand:before {
   content: "\e809";
 }
-.icon-task:before {
+.icon-history:before {
   content: "\e80a";
 }
-.icon-pencil:before {
+.icon-LOS:before {
+  content: "\e80b";
+}
+.icon-notes:before {
+  content: "\e80c";
+}
+.icon-print:before {
+  content: "\e80d";
+}
+.icon-sales:before {
   content: "\e80e";
 }
-.icon-copy:before {
+.icon-task:before {
   content: "\e80f";
 }
-.icon-users:before {
+.icon-cross:before {
   content: "\e810";
 }
-.icon-cross:before {
-  content: "\e80b";
+.icon-info:before {
+  content: "\e811";
+}
+.icon-help:before {
+  content: "\e812";
+}
+.icon-pencil:before {
+  content: "\e813";
+}
+.icon-copy:before {
+  content: "\e814";
+}
+.icon-users:before {
+  content: "\e815";
+}
+.icon-search:before {
+  content: "\e986";
 }
 
 [data-icon]::before {

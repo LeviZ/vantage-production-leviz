@@ -1,5 +1,26 @@
 // atomic, elemental, and molecular-level UI
 
+// customizing boostrap btn states
+// .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus,
+// .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus,
+// .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus,
+// .open > .btn-default.dropdown-toggle.focus {
+//   color: $text-color;
+//   // background-color: inherit;
+//   border-color: inherit;
+// }
+
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+  outline: thin dotted;
+  outline: 2px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn.active:focus {
+  background-color: $brand-secondary;
+  color: #fff;
+}
+
 
 // vertical center
 .vert-center {
@@ -277,17 +298,17 @@ margin-bottom: -4px;
   border-radius: 4px;
 }
 
-.btn-view, .btn-view:hover {
-    background: $brand-secondary;
-    color: #fff;
+.btn-view, .btn-view:hover  {
+    background: #fff;
+    color: $brand-secondary;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border: none;
 }
 
-.btn-view.active, .btn-view.active  {
-    background: #fff;
-    color: $brand-secondary;
+.btn-view.active, .btn-view.active, btn-view.active:focus, .btn-view.active:hover  {
+    background: $brand-secondary;
+    color: #fff;
     border: none;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -352,8 +373,7 @@ div.k-grid-content {
 }
 
 .k-grid-header {
-    padding: 0px;
-     padding-right:0px !important;
+    padding-right:0px !important;
 }
 
 .k-grid-header .k-header {
@@ -384,9 +404,9 @@ div.k-grid-content {
     float: right;
 }
 
-// .k-grid-pager {
-//     border: 0;
-// }
+.k-grid-pager {
+    border: 0;
+}
 
 .k-grid-content tr td {
     font-size: 13px;
@@ -432,6 +452,14 @@ div.k-grid-content {
 .k-pager-wrap {
     padding-top: 1em;
     background: #fff;
+}
+
+.icon-cell {
+  text-align: center !important;
+}
+
+.k-grid-content tr td:first-child {
+  text-align: center;
 }
 
 // CRM Table (Kendo) grid view

@@ -42,3 +42,9 @@ $navbar-default-link-hover-color:          darken($text-color, 15%);
 //
 $dropdown-bg:                    $brand-3rd;
 $dropdown-border:                darken($dropdown-bg, 25%);
+
+
+//== Forms
+//
+//** Border color for inputs on focus
+$input-border-focus:             $brand-3rd;
