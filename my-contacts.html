@@ -27,22 +27,23 @@
         <a href="#"><img src="assets/imgs/header-logo.jpg" width="140" height="80"></a>
         <nav class="header-menu">
             <ul class="header-menu-list">
-              <li class="header-menu-item dropdown">
-                <span class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome
-                  <a href="#" >John Doe (177) <span class="caret"></span></a>
-                </span>
+                <li class="header-menu-item dropdown">
+                    <span class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Welcome
+                        <a href="#">John Doe (177) <span class="caret"></span></a>
+                    </span>
 
-                <ul class="dropdown-menu header-dropdown">
-                    <li><a href="#">My Profile</a></li>
-                    <li role="separator" class="header-menu-sep"></li>
-                    <li><a href="#">Notifications(177)</a></li>
-                    <li role="separator" class="header-menu-sep"></li>
-                    <li><a href="#">Log Out</a></li>
-                </ul>
+                    <ul class="dropdown-menu header-dropdown">
+                        <li><a href="#">My Profile</a></li>
+                        <li role="separator" class="header-menu-sep"></li>
+                        <li><a href="#">Notifications(177)</a></li>
+                        <li role="separator" class="header-menu-sep"></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
 
-              </li>
-              <li class="header-menu-item"><a href="#">Resources</a></li>
-              <li class="header-menu-item"><a href="#">Contact Us</a></li>
+                </li>
+                <li class="header-menu-item"><a href="#">Resources</a></li>
+                <li class="header-menu-item"><a href="#">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -101,9 +102,9 @@
                     </li>
                     <li><a href="#">Toolbox</a></li>
                     <li><a href="#">Reports</a></li>
- 
+
                     <li class="dropdown administrator">
-                        <a    class="dropdown-toggle" data-toggle="dropdown">Administration</a>
+                        <a class="dropdown-toggle" data-toggle="dropdown">Administration</a>
                         <div class="triangle-container">
                             <div class="triangle-down"></div>
                         </div>
@@ -128,11 +129,11 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </li>
- 
+
                 </ul> <!-- end navbar -->
- 
+
                 <ul class="nav-list-none navbar-nav navbar-right">
                     <li>
                         <a class="navbar-brand" href="#" data-icon="&#xe80d;"></a>
@@ -708,87 +709,7 @@
 
                 </div>
                 <div class="hidden" id="divListView">
-                    <script type="text/x-kendo-template" id="template">
-
-
-                        <div class="col-md-3 col-xs-6 col-sm-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <a>#:Name#</a>
-                                    <a class="btn btn-danger btn-#:LeadHeat# btn-sm pull-right">#:LeadHeat#</a>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-xs-5">
-
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Phone:</label>
-                                                <div class="display-text">
-                                                    #:Phone#
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-xs-5">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Email:</label>
-                                                <div class="display-text">
-                                                    <a>   #:Email#</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-5">
-
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Status:</label>
-                                                <div class="display-text">
-                                                    <a> #:Status#</a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-xs-5">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Application Number:</label>
-                                                <div class="display-text">
-                                                    <a> #:ApplicationNumber#</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-5">
-
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Loan Purpose:</label>
-                                                <div class="display-text">
-                                                    <label for="exampleInputEmail1">#:LoanPurpose#</label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-xs-5">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Source:</label>
-                                                <div class="display-text">
-                                                    <a>#:Source#</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer  text-right">
-                                    <a data-icon="&\\#xe807;"></a>
-                                    <a data-icon="&\\#xe803;"></a>
-                                    <a data-icon="&\\#xe809;"></a>
-                                    <a data-icon="&\\#xe805;"></a>
-                                    <a data-icon="&\\#xe802;"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </script>
+                    
                     <div id="LeadsListview" class="row">
 
 
@@ -858,10 +779,13 @@
         });
 
         function bindListView() {
-            var products = [
-           { Name: "Alex Lifeson", Phone: "555-555-5555", Email: "alex@rush.com", Status: "Lead Assigned", ApplicationNumber: "0012345", LoanPurpose: "Refinance", Source: "VenderXyz" ,LeadHeat:"Hot"},
-      { Name: "Alex Lifeson", Phone: "555-555-5555", Email: "alex@rush.com", Status: "Lead Assigned", ApplicationNumber: "0012345", LoanPurpose: "Refinance", Source: "VenderXyz", LeadHeat: "Warm" },
-       { Name: "Alex Lifeson", Phone: "555-555-5555", Email: "alex@rush.com", Status: "Lead Assigned", ApplicationNumber: "0012345", LoanPurpose: "Refinance", Source: "VenderXyz", LeadHeat: "Cold" },
+
+
+            //JSON Data Object
+            var people = [
+           { Name: "Alex Lifeson", Phone: "555-555-5555", Email: "alex@rush.com", Status: "Lead Assigned", ApplicationNumber: "0012345", LoanPurpose: "Refinance", Source: "VenderXyz", LeadHeat: "Hot" },
+          { Name: "Alex Lifeson", Phone: "555-555-5555", Email: "alex@rush.com", Status: "Lead Assigned", ApplicationNumber: "0012345", LoanPurpose: "Refinance", Source: "VenderXyz", LeadHeat: "Warm" },
+           { Name: "Alex Lifeson", Phone: "555-555-5555", Email: "alex@rush.com", Status: "Lead Assigned", ApplicationNumber: "0012345", LoanPurpose: "Refinance", Source: "VenderXyz", LeadHeat: "Cold" },
          { Name: "Alex Lifeson", Phone: "555-555-5555", Email: "alex@rush.com", Status: "Lead Assigned", ApplicationNumber: "0012345", LoanPurpose: "Refinance", Source: "VenderXyz", LeadHeat: "Hot" },
          { Name: "Alex Lifeson", Phone: "555-555-5555", Email: "alex@rush.com", Status: "Lead Assigned", ApplicationNumber: "0012345", LoanPurpose: "Refinance", Source: "VenderXyz", LeadHeat: "Warm" },
          { Name: "Alex Lifeson", Phone: "555-555-5555", Email: "alex@rush.com", Status: "Lead Assigned", ApplicationNumber: "0012345", LoanPurpose: "Refinance", Source: "VenderXyz", LeadHeat: "Hot" },
@@ -876,27 +800,109 @@
 
 
 
-
+            //We bind Json Data Object with kendo datasource api
             var dataSource = new kendo.data.DataSource({
-                data: products,
+                data: people,
                 pageSize: 8
             });
-
+            //We bind kendo datasource  Object with kendoPager api
             $("#LeadsListviewPager").kendoPager({
                 dataSource: dataSource, messages: {
                     display: "Showing {0} to {1} of {2} items", first: "First page"
                 }
             });
-
+            //We bind kendo datasource  Object with kendoListView
             $("#LeadsListview").kendoListView({
                 dataSource: dataSource,
-                template: kendo.template($("#template").html())
+                template: kendo.template($("#template").html())//Kendo Template Box which is written bottom of the page
             });
-            $("#LeadsListview").removeClass('k-widget k-listview')
+
+            //remove classes which is added by kendo.
+            $("#LeadsListview").removeClass('k-widget k-listview');
 
         }
     </script>
 
+    <script type="text/x-kendo-template" id="template">
 
+
+        <div class="col-md-3 col-xs-6 col-sm-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a>#:Name#</a>
+                    <a class="btn btn-danger btn-#:LeadHeat# btn-sm pull-right">#:LeadHeat#</a>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-5">
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Phone:</label>
+                                <div class="display-text">
+                                    #:Phone#
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-5">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email:</label>
+                                <div class="display-text">
+                                    <a>   #:Email#</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5">
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Status:</label>
+                                <div class="display-text">
+                                    <a> #:Status#</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-5">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Application Number:</label>
+                                <div class="display-text">
+                                    <a> #:ApplicationNumber#</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5">
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Loan Purpose:</label>
+                                <div class="display-text">
+                                    <label for="exampleInputEmail1">#:LoanPurpose#</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-5">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Source:</label>
+                                <div class="display-text">
+                                    <a>#:Source#</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer  text-right">
+                    <a data-icon="&\\#xe807;"></a>
+                    <a data-icon="&\\#xe803;"></a>
+                    <a data-icon="&\\#xe809;"></a>
+                    <a data-icon="&\\#xe805;"></a>
+                    <a data-icon="&\\#xe802;"></a>
+                </div>
+            </div>
+        </div>
+    </script>
 </body>
 </html>
