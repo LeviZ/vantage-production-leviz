@@ -8025,6 +8025,15 @@ button.close {
 .dropdown:hover > .dropdown-menu {
   display: block; }
 
+.navbar-brand {
+  font-size: 14px; }
+
+.navbar-brand:hover {
+  background-color: #c4d3e4; }
+
+.navbar-right .navbar-brand {
+  font-size: 18px; }
+
 .nav-list-none {
   list-style-type: none;
   margin: 0;

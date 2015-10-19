@@ -172,6 +172,21 @@
   display: block;
 }
 
+.navbar-brand {
+  font-size: $font-size-base;
+
+}
+
+.navbar-brand:hover {
+    background-color: darken($brand-3rd, 10%);
+  }
+
+.navbar-right .navbar-brand {
+  font-size: $font-size-h4;
+}
+
+
+
 .nav-list-none {
     list-style-type: none;
     margin: 0;
@@ -209,6 +224,7 @@
 .columns-3 {
     max-width: 600px;
 }
+
 
 // Page header
 // -------------------------
