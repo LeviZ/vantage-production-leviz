@@ -103,12 +103,12 @@
                     <li><a href="#">Toolbox</a></li>
                     <li><a href="#">Reports</a></li>
 
-                    <li class="dropdown administrator">
+                    <li class="dropdown administration">
                         <a class="dropdown-toggle" data-toggle="dropdown">Administration</a>
                         <div class="triangle-container">
                             <div class="triangle-down"></div>
                         </div>
-                        <div class="dropdown-menu " id="administratorMenu" style="width: 100% !important;">
+                        <div class="dropdown-menu" id="administratorMenu">
                             <ul>
                                 <li>
                                     <a class="dropdown-toggle" data-toggle="dropdown">Configuration</a>
@@ -136,7 +136,7 @@
 
                 <ul class="nav-list-none navbar-nav navbar-right">
                     <li>
-                        <a class="navbar-brand" href="#" data-icon="&#xe80d;"></a>
+                        <a class="navbar-brand" href="#" data-icon="&#xe812;"></a>
                     </li>
                 </ul>
             </div> <!-- end navbar collapse  -->
@@ -160,47 +160,41 @@
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="Leads">
                 <h3 class="page-header">
-                    Lead Contact   <a class="refresh">
-                        <img src="assets/imgs/refresh.png" />
-                    </a>
+                    Lead Contact   <a href="#" data-icon="&#xe802;"></a>
                 </h3>
-                <div class="row crm-controls">
-                    <div class="col-md-6">
-                        <div class="form-group form-inline col-xs-4">
-                            <span class="text">Show</span>
-                            <select class="form-control " id="ddlItemPageSize">
-                                <option>10</option>
-                                <option>20</option>
-                                <option>50</option>
-                            </select>
-                            <span class="text">Items</span>
-                        </div>
-                        <div class="form-group form-inline col-xs-8">
-                            <div class="btn-group btn-group-view" role="group" aria-label="...">
-                                <button type="button" class="btn btn-default btn-view active">List View</button>
-                                <button type="button" class="btn btn-default btn-view">Grid View</button>
+                <div class="row crm-controls container-fluid">
+                    <div class="form-group form-inline col-md-2">
+                        <span class="text">Show</span>
+                        <select class="form-control show-dropdown" id="ddlItemPageSize">
+                            <option>10</option>
+                            <option>20</option>
+                            <option>50</option>
+                        </select>
+                        <span class="text">Items</span>
+                    </div>
+                    <div class="form-group form-inline col-md-3">
+                        <div class="btn-group btn-group-view" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default btn-view active"><span data-icon="&#xe803;"></span>List View</button>
+                            <button type="button" class="btn btn-default btn-view" ><span data-icon="&#xe804;"></span>Grid View</button>
 
-                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group form-inline col-xs-7">
-                            <div class="input-group quick-search">
-                                <div class="form-control ">
-                                    <input type="text" aria-label="..." placeholder="Quick Search">
-                                    <select id="ddlSearchOption">
-                                        <option>All</option>
-                                        <option>Email</option>
-                                        <option>First Name</option>
-                                    </select>
-                                </div>
-                                <span class="input-group-addon" id="sizing-addon1">@</span>
+                    <div class="form-group form-inline col-md-4">
+                        <div class="input-group quick-search pull-right">
+                            <div class="form-control">
+                                <input type="text" aria-label="..." placeholder="Quick Search">
+                                <select id="ddlSearchOption">
+                                    <option>All</option>
+                                    <option>Email</option>
+                                    <option>First Name</option>
+                                </select>
                             </div>
+                            <span class="input-group-addon" id="sizing-addon1" data-icon="&#xe986;"></span>
                         </div>
-                        <div class="form-inline col-xs-5">
-                            <div class=" ">
-                                <input id="showHideColumns" style="width: 100%" data-role="multiselectbox" data-option-label="-" data-text-field="Name" data-value-field="Id" data-bind="source: testItemSource, value: testItems" />
-                            </div>
+                    </div>
+                    <div class="form-inline col-md-3">
+                        <div>
+                            <input id="showHideColumns" style="width: 100%" data-role="multiselectbox" data-option-label="-" data-text-field="Name" data-value-field="Id" data-bind="source: testItemSource, value: testItems" />
                         </div>
                     </div>
                 </div>
@@ -827,7 +821,7 @@
     <script type="text/x-kendo-template" id="template">
 
 
-        <div class="col-md-3 col-xs-6 col-sm-4">
+        <div class="col-md-3 col-xs-12 col-sm-6">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <a>#:Name#</a>

@@ -1,19 +1,8 @@
 // atomic, elemental, and molecular-level UI
 
-// customizing boostrap btn states
-// .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus,
-// .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus,
-// .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus,
-// .open > .btn-default.dropdown-toggle.focus {
-//   color: $text-color;
-//   // background-color: inherit;
-//   border-color: inherit;
-// }
 
-.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
-  outline: thin dotted;
-  outline: 2px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus, input:focus {
+  outline: 0;
 }
 
 .btn.active:focus {
@@ -148,7 +137,6 @@
 
 .multi-column-dropdown {
     list-style: none;
-    /*padding-left: 10px;*/
     padding: 5px;
 }
 
@@ -156,14 +144,12 @@
     display: block;
     clear: both;
     line-height: 1.428571429;
-    color: $brand-secondary;
-    // white-space: normal;
+    color: $link-color;
     font-weight: 400;
     padding-top: 5px;
 }
 
 .multi-column-dropdown li a:hover {
-    // text-decoration: none;
     color: darken($brand-secondary, 15%);
 }
 
@@ -246,6 +232,22 @@
     max-width: 600px;
 }
 
+ .administration.li.dropdown.open {
+  position: static;
+}
+
+.administration > li.dropdown.open .dropdown-menu {
+  display: table;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.administration .dropdown-menu>li {
+  display: table-cell;
+}
+
 
 // Page header
 // -------------------------
@@ -254,6 +256,15 @@
   padding-bottom: (($line-height-computed / 2) - 1);
   margin: ($line-height-computed * 2) 0 $line-height-computed;
   border-bottom: none;
+}
+
+.tab-pane > .page-header > a {
+  font-size: 16px;
+  color: $brand-primary;
+  &:hover {
+    text-decoration: none;
+    color: darken($brand-primary, 15%);
+  }
 }
 
 
@@ -293,9 +304,25 @@ margin-bottom: -4px;
     font-weight: bold;
 }
 
+.crm-controls .k-dropdown {
+  border: solid 2px $brand-secondary;
+}
+
+.crm-controls .k-dropdown-wrap.k-state-default {
+  border: none;
+}
+
 .btn-group-view {
-  border: solid 1px $brand-secondary;
+  border: solid 2px $brand-secondary;
   border-radius: 4px;
+}
+
+.btn-view > [data-icon] {
+  font-size: 11px;
+}
+
+.btn-view {
+  padding: 7.5px 12px;
 }
 
 .btn-view, .btn-view:hover  {
@@ -303,6 +330,7 @@ margin-bottom: -4px;
     color: $brand-secondary;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    border-radius:0;
     border: none;
 }
 
@@ -314,10 +342,11 @@ margin-bottom: -4px;
     box-shadow: none;
 }
 
+
 .quick-search {
     width: 300px;
     border-radius: 4px;
-    border: solid 1px $brand-secondary;
+    border: solid 2px $brand-secondary;
 }
 
 .quick-search .form-control {
@@ -332,11 +361,12 @@ margin-bottom: -4px;
 
 .quick-search select {
     border: none;
-    position: absolute;
-    right: 0px;
-    width: 30%;
     background: #fff;
     color: $text-color;
+}
+
+.quick-search {
+  width: 420px;
 }
 
 .quick-search .form-control {
@@ -351,9 +381,26 @@ margin-bottom: -4px;
   border: none;
 }
 
+.quick-search .k-dropdown {
+  top: -27px;
+  left: 215px;
+  width: 10em;
+  border: none;
+}
+
+
+.quick-search .k-dropdown-wrap.k-state-default {
+  border: none;
+  text-align: right;
+}
+
 .crm-controls .dropdown-toggle {
   border-color: $brand-secondary;
   color: $text-color;
+}
+
+.k-input {
+  padding: .25em 0 !important;
 }
 
 
@@ -442,11 +489,11 @@ div.k-grid-content {
 }
 
 .k-state-selected {
-    background: $brand-link-color;
+    background: $link-color;
 }
 
 .k-link:link, .k-link:visited, .k-nav-current.k-state-hover .k-link {
-    color: $brand-link-color;
+    color: $link-color;
 }
 
 .k-pager-wrap {
