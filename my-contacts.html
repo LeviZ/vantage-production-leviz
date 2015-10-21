@@ -104,32 +104,175 @@
                     <li><a href="#">Reports</a></li>
 
                     <li class="dropdown administration">
-                        <a class="dropdown-toggle" data-toggle="dropdown">Administration</a>
-                        <div class="triangle-container">
+                        <a href="" class="dropdown-toggle" data="dropdown-toggle">Administration</a>
+                        <!-- <div class="triangle-container">
                             <div class="triangle-down"></div>
-                        </div>
-                        <div class="dropdown-menu" id="administratorMenu">
-                            <ul>
-                                <li>
-                                    <a class="dropdown-toggle" data-toggle="dropdown">Configuration</a>
-                                    <ul class="dropdown-menu ">
-                                        <li>
-                                            <a>Manage Roles</a>
-
-                                        </li>
-                                        <li>
-                                            <a>Compliance</a>
-
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a>Compliance</a>
-
-                                </li>
+                        </div> -->
+                        <ul class="dropdown-menu admin-dropdown">
+                          <li>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Configuration</a>
+                            <ul class="dropdown-menu sub-dropdown">
+                              <li>
+                                <span>Organizational Roles</span>
+                              </li>
+                              <li>
+                                <a href="">Manage Roles</a>
+                              </li>
+                              <li>
+                                <a href="">Users</a>
+                              </li>
+                              <li>
+                                <a href="">Add Users</a>
+                              </li>
+                              <li>
+                                <a href="">My Profile</a>
+                              </li>
                             </ul>
-                        </div>
+                          </li>
+                          <li>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Compliance</a>
+                            <ul class="dropdown-menu sub-dropdown">
+                              <li>
+                                <a href="">General Compliance Statement</a>
+                              </li>
+                              <li>
+                                <a href="">User Compliance Statement</a>
+                              </li>
+                              <li>
+                                <a href=""></a>
+                              </li>
+                              <li>
+                                <a href=""></a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">CRM</a>
+                            <ul class="dropdown-menu sub-dropdown">
+                              <li>
+                                <a href="">link</a>
+                              </li>
+                              <li>
+                                <a href="">link</a>
+                              </li>
+                              <li>
+                                <a href=""></a>
+                              </li>
+                              <li>
+                                <a href=""></a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Sales</a>
+                            <ul class="dropdown-menu sub-dropdown">
 
+                              <li>
+                                <a href="">Contact Status MGMT</a>
+                              </li>
+                              <li>
+                                <a href="">Workflow MGMT</a>
+                              </li>
+                              <li>
+                                <a href=""></a>
+                              </li>
+                              <li>
+                                <a href=""></a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">MMG</a>
+                            <ul class="dropdown-menu sub-dropdown">
+
+                              <li>
+                                <a href="">Manage Roles</a>
+                              </li>
+                              <li>
+                                <a href="">Users</a>
+                              </li>
+                              <li>
+                                <a href="">Add Users</a>
+                              </li>
+                              <li>
+                                <a href="">My Profile</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Marketing</a>
+                            <ul class="dropdown-menu sub-dropdown">
+
+                              <li>
+                                <a href="">Manage Roles</a>
+                              </li>
+                              <li>
+                                <a href="">Users</a>
+                              </li>
+                              <li>
+                                <a href="">Add Users</a>
+                              </li>
+                              <li>
+                                <a href="">My Profile</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Toolbox</a>
+                            <ul class="dropdown-menu sub-dropdown">
+
+                              <li>
+                                <a href="">Manage Roles</a>
+                              </li>
+                              <li>
+                                <a href="">Users</a>
+                              </li>
+                              <li>
+                                <a href="">Add Users</a>
+                              </li>
+                              <li>
+                                <a href="">My Profile</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Sites</a>
+                            <ul class="dropdown-menu sub-dropdown">
+
+                              <li>
+                                <a href="">Manage Roles</a>
+                              </li>
+                              <li>
+                                <a href="">Users</a>
+                              </li>
+                              <li>
+                                <a href="">Add Users</a>
+                              </li>
+                              <li>
+                                <a href="">My Profile</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">RPC</a>
+                            <ul class="dropdown-menu sub-dropdown">
+
+                              <li>
+                                <a href="">Manage Roles</a>
+                              </li>
+                              <li>
+                                <a href="">Users</a>
+                              </li>
+                              <li>
+                                <a href="">Add Users</a>
+                              </li>
+                              <li>
+                                <a href="">My Profile</a>
+                              </li>
+                            </ul>
+                          </li>
+
+                        </ul>
                     </li>
 
                 </ul> <!-- end navbar -->
@@ -825,7 +968,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <a>#:Name#</a>
-                    <a class="btn  btn-#:((LeadHeat=='hot'?'danger':(LeadHeat=='cold'?'info':'warning')))# btn-sm pull-right">#:LeadHeat#</a>
+                    <button class="btn  btn-#:((LeadHeat=='hot'?'danger':(LeadHeat=='cold'?'info':'warning')))# btn-sm pull-right">#:LeadHeat#</button>
                 </div>
                 <div class="panel-body">
                     <div class="row">

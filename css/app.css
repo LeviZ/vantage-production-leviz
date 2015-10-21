@@ -8030,7 +8030,7 @@ button.close {
 .multi-column-dropdown-header {
   display: block;
   line-height: 1.42857;
-  color: #777;
+  color: #545454;
   white-space: nowrap;
   padding: 5px; }
 
@@ -8090,18 +8090,50 @@ button.close {
 .columns-3 {
   max-width: 600px; }
 
-.administration.li.dropdown.open {
+.nav {
+  margin-bottom: 0; }
+
+.nav > .administration {
   position: static; }
 
-.administration > li.dropdown.open .dropdown-menu {
+.nav > .administration:hover > .dropdown-menu {
   display: table;
   width: 100%;
   text-align: center;
   left: 0;
-  right: 0; }
+  right: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  background-color: #5f666e; }
 
-.administration .dropdown-menu > li {
+.administration > .admin-dropdown > li {
   display: table-cell; }
+
+.administration > .admin-dropdown > li:hover .dropdown-menu {
+  display: block;
+  left: auto; }
+
+.administration > .admin-dropdown > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: transparent; }
+
+.administration > .admin-dropdown > li > a {
+  color: #fff; }
+  .administration > .admin-dropdown > li > a:hover {
+    color: #d9d9d9; }
+
+.admin-dropdown .sub-dropdown {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0; }
+  .admin-dropdown .sub-dropdown span {
+    padding: 5px; }
+
+.admin-dropdown .sub-dropdown a {
+  color: #6492c4; }
+  .admin-dropdown .sub-dropdown a:hover {
+    color: #3d6c9f;
+    background-color: transparent; }
 
 .page-header {
   padding-bottom: 9px;
@@ -8298,3 +8330,6 @@ div.k-grid-content {
 
 .k-grid-content tr td:first-child {
   text-align: center; }
+
+#template .panel-heading {
+  padding-bottom: 20px; }

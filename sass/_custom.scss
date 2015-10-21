@@ -156,7 +156,7 @@
 .multi-column-dropdown-header{
     display: block;
     line-height: 1.42857;
-    color: #777;
+    color: $text-color;
     white-space: nowrap;
     padding: 5px;
 }
@@ -191,8 +191,6 @@
 .navbar-right .navbar-brand {
   font-size: $font-size-h4;
 }
-
-
 
 .nav-list-none {
     list-style-type: none;
@@ -232,20 +230,62 @@
     max-width: 600px;
 }
 
- .administration.li.dropdown.open {
+.nav {
+  margin-bottom: 0;
+}
+
+.nav > .administration {
   position: static;
 }
 
-.administration > li.dropdown.open .dropdown-menu {
+.nav > .administration:hover > .dropdown-menu {
   display: table;
   width: 100%;
   text-align: center;
   left: 0;
   right: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  background-color: $brand-secondary;
 }
 
-.administration .dropdown-menu>li {
+.administration > .admin-dropdown > li {
   display: table-cell;
+}
+
+.administration > .admin-dropdown > li:hover .dropdown-menu {
+  display: block;
+  left: auto;
+}
+
+.administration > .admin-dropdown > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: transparent;
+}
+
+.administration > .admin-dropdown > li  > a {
+  color: #fff;
+  &:hover {
+    color: darken(#fff, 15%);
+  }
+}
+
+.admin-dropdown .sub-dropdown {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0;
+  & span {
+    padding: 5px;
+  }
+}
+
+.admin-dropdown .sub-dropdown a {
+  color: $link-color;
+  &:hover {
+    color: darken($link-color, 15%);
+    // text-decoration: underline;
+    background-color: transparent;
+  }
 }
 
 
@@ -511,7 +551,9 @@ div.k-grid-content {
 
 // CRM Table (Kendo) grid view
 
-
+#template .panel-heading {
+  padding-bottom: 20px;
+}
 
 
 
